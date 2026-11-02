@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#142c25" />
+  <meta name="description" content="Discover design-led everyday essentials at Form & Field." />
+  <title>Form & Field — Everyday, elevated</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> A considered collection for everyday living <span class="announcement-right">GOOD DESIGN. GOOD DAYS. <span>✳</span></span></div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Form and Field home"><span class="brand-symbol">f<span>.</span></span><span>FORM<span class="brand-amp">&</span>FIELD</span></a>
+    <nav aria-label="Main navigation"><a class="active" href="#shop">Shop</a><a href="#story">Our philosophy</a></nav>
+    <a class="header-cta" href="#shop">Explore collection <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-mark">✳</span> THE EVERYDAY EDIT · VOL. 01</p>
+        <h1>Make room for<br /><em>the good stuff.</em></h1>
+        <p class="hero-description">A thoughtful mix of useful objects, small upgrades and everyday favourites. Designed to make ordinary moments feel a little more special.</p>
+        <div class="hero-actions"><a class="primary-btn" href="#shop">Shop the collection <span>↗</span></a><span class="hero-note">10 handpicked essentials <i></i> Made for daily life</span></div>
+        <div class="hero-bottom-note"><span class="hero-line"></span> LESS NOISE. MORE OF WHAT MATTERS.</div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image"></div>
+        <div class="hero-image-overlay"></div>
+        <div class="hero-side-label">OBJECTS FOR EVERYDAY LIVING — 2026</div>
+        <div class="hero-roundel"><span>THE ART OF</span><strong>every<br/>day</strong><span>EST. MMXXVI</span></div>
+        <div class="hero-card"><span class="hero-card-icon">✳</span><div><strong>Thoughtfully picked.</strong><small>Everyday essentials, reimagined.</small></div><span class="hero-card-arrow">↗</span></div>
+      </div>
+      <div class="hero-index">01 <span>/</span> 03</div>
+    </section>
+
+    <section class="trust-row" aria-label="Store highlights"><div><span>01</span><strong>Curated essentials</strong><small>Only the things worth keeping</small></div><div><span>02</span><strong>Everyday pricing</strong><small>Good finds, fair prices</small></div><div><span>03</span><strong>Made to be useful</strong><small>Form meets function</small></div><div class="trust-aside">A BETTER KIND OF EVERYDAY <b>✳</b></div></section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-topline"><p class="eyebrow">THE COLLECTION</p><span>OBJECTS WITH A PURPOSE · 001—010</span></div>
+      <div class="section-heading"><div><h2>Find your <em>favourite.</em></h2><p>Good things for the everyday things.</p></div><p class="result-count" id="result-count">Loading collection…</p></div>
+      <div class="toolbar">
+        <label class="search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search products, objects, essentials…" maxlength="100" /><kbd>⌘ K</kbd></label>
+        <div class="toolbar-controls"><label class="filter-label"><span>Category</span><select id="category"><option value="">All categories</option></select></label><label class="filter-label"><span>Sort</span><select id="sort"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="name">Name: A to Z</option></select></label></div>
+      </div>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+      <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      <div class="collection-footer"><span>YOU'VE GOT GOOD TASTE.</span><span>END OF COLLECTION <b>↘</b></span></div>
+    </section>
+
+    <section class="story-section" id="story"><div class="story-mark">f.</div><div class="story-copy"><p class="eyebrow">A SMALL PHILOSOPHY</p><h2>Buy less.<br/><em>Choose better.</em></h2></div><p class="story-description">We believe everyday objects should earn their place. That's why we look for the sweet spot between thoughtful design, useful details and honest value. No clutter. Just good things, chosen well.</p><div class="story-stamp">FORM<br/><span>&</span><br/>FIELD</div></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="/"><span class="brand-symbol">f<span>.</span></span><span>FORM<span class="brand-amp">&</span>FIELD</span></a><p>Everyday objects. A little more considered.</p><span>© 2026 FORM & FIELD · PART 1 PROJECT</span></footer>
+
+  <div class="modal-backdrop" id="modal" hidden><section class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="Close product details">×</button><div id="modal-content"></div></section></div>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
